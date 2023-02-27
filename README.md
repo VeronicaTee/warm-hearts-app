@@ -6,7 +6,6 @@ This is a donation system that allows users to make donations using either Bitco
 
 - Laravel (PHP framework)
 - Bitcoin Core
-- Lightning Network
 
 ## Getting Started
 
