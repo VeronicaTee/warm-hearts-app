@@ -21,21 +21,17 @@ To get started with this project, follow these steps:
 
 ## API Endpoints
 
-### `GET /products`
+### `GET /causes`
 
 Returns a list of digital products available for purchase.
 
-### `GET /products/{id}`
+### `GET /causes/{id}`
 
 Returns information about a specific product, including the price in Bitcoin and/or Lightning.
 
-### `POST /invoices`
+### `POST /addresses`
 
-Generates a Bitcoin or Lightning invoice for the selected product and returns the invoice details to the client.
-
-### `POST /api/invoice`
-
-Generates a new invoice or payment request for a specified amount of money, in the specified currency, using either Bitcoin or Lightning Network.
+Generates a Bitcoin address for the selected product and returns details to the client.
 
 ### `GET /donate`
 
@@ -43,7 +39,7 @@ Returns a view with a form that takes in some user input.
 
 ### `POST /donate/generate-address`
 
-Submits the form from the `/donate` view and generates a Bitcoin or Lightning invoice for the specified amount.
+Submits the form from the `/donate` view and generates a Bitcoin address for the specified amount.
 
 ## License
 
