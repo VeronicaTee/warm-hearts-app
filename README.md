@@ -16,8 +16,7 @@ To get started with this project, follow these steps:
 3. Create a `.env` file by copying the `.env.example` file: `cp .env.example .env`.
 4. Generate a new application key: `php artisan key:generate`.
 5. Set up a Bitcoin Core node or connect to an existing one by updating the `BITCOIN_*` variables in the `.env` file.
-6. Set up a Lightning node or connect to an existing one by updating the `LND_*` variables in the `.env` file.
-7. Start the Laravel development server: `php artisan serve`.
+6. Start the Laravel development server: `php artisan serve`.
 
 ## API Endpoints
 
