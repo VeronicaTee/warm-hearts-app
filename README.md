@@ -33,13 +33,13 @@ Returns information about a specific product, including the price in Bitcoin and
 
 Generates a Bitcoin address for the selected product and returns details to the client.
 
-### `GET /donate`
+### `GET /donations`
 
-Returns a view with a form that takes in some user input.
+Returns total of all donations received.
 
-### `POST /donate/generate-address`
+### `GET /generate-address`
 
-Submits the form from the `/donate` view and generates a Bitcoin address for the specified amount.
+Generates a Bitcoin address for the selected product and returns details to the client.
 
 ## License
 
