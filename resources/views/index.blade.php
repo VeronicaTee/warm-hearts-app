@@ -104,7 +104,7 @@
 
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                     <div class="featured-block d-flex justify-content-center align-items-center">
-                        <a href="donate.blade.php" class="d-block">
+                        <a href=" {{ route('donate') }} " class="d-block">
                             <img src="/images/icons/scholarship.png" class="featured-block-image img-fluid" alt="">
 
                             <p class="featured-block-text"><strong>Scholarship</strong> Program</p>

@@ -12,5 +12,11 @@ class DonateController extends Controller
         return view('donate');
     }
 
+    public function confirm(Request $request)
+    {
+        // return "Here's the form to fill";
+        return view('confirm-donation');
+    }
+
 
 }

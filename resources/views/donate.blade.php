@@ -44,7 +44,7 @@
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault2">
+                                            id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                             Disaster Relief
                                         </label>
@@ -53,7 +53,7 @@
                                 <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
                                         <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault3">
+                                            id="flexRadioDefault1">
                                         <label class="form-check-label" for="flexRadioDefault3">
                                             Orphans Support
                                         </label>
@@ -74,15 +74,12 @@
                                         pattern="[^ @]@[^ @]" class="form-control" placeholder="Jackdoe@gmail.com">
                                 </div>
 
-                                <div class="col-lg-12 col-12">
-                                    <h5 class="mt-4 pt-1">Choose Payment</h5>
-                                </div>
+
 
                                 <div class="col-lg-12 col-12 mt-2">
 
                                     <button type="submit" class="form-control mt-4">Pay with Bitcoin</button>
 
-                                    <button type="submit" class="form-control mt-4">Pay with Lightning</button>
                                 </div>
                             </div>
                         </form>

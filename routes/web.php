@@ -23,7 +23,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/donate', [DonateController::class, 'index'])->name('donate');
 Route::post('/donate', [BitcoinPaymentController::class, 'generateNewAddress'])->name('donate-form');
 
-// Wallet Balance
+// Payments
+Route::get('/confirm', [DonateController::class, 'confirm'])->name('confirm');
+Route::post('/confirm', [BitcoinPaymentController::class, 'confirmPayment'])->name('confirm-form');
 // Route::get('/', [HomeController::class, 'getWalletBalance'])->name('balance');
 
 

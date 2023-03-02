@@ -24,11 +24,6 @@ class BitcoinPaymentController extends Controller
 
         return $balance;
 
-        // return view('index', ['balance' => $balance]);
-        // return view('home', $balance);
-
-        // return $balance;
-
     }
 
 
@@ -68,6 +63,48 @@ class BitcoinPaymentController extends Controller
     }
 
 
+    public function confirmPayment(Request $request)
+    {
+
+        $txid = $request->input('txid');
+        // $blockCount = $request->input('blockCount');
+        // $address = $request->input('address');
+
+        //Get transaction details
+        // $confirmations = $this->getTransactionDetails($txid, $address);
+
+        // Check if transaction has enough confirmations
+        // if ($txDetails['confirmations'] > 6) {
+        //     return "Donation has been received. Thank you.";
+        // } else {
+        //     return "Donation is still being confirmed, kindly check back in about 30 minutes";
+        // }
+
+        $output = null;
+        $command = "bitcoin-cli -rpcwallet=warmheartslnd gettransaction $txid | jq '.confirmations' 2>&1";
+        exec($command, $output);
+        $confirmations = implode("\n", $output);
+
+        // return $command;
+        // return $confirmations;
+        $goodreport = "Donation has been received. Thank you.";
+        $badreport = "Donation is still being confirmed, kindly check back in about 30 minutes. Thank you.";
+
+
+        // Check if transaction has enough confirmations
+        if ($confirmations > 6) {
+            return view('confirm-success',[
+                'report' => $goodreport
+            ]);
+        } else {
+            return view('confirm-success',[
+                'report' => $goodreport
+
+            ]);
+            // return "Donation is still being confirmed, kindly check back in about 30 minutes";
+        }
+
+    }
 
 }
 

@@ -31,7 +31,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // Bitcoin payment
 Route::get('/generate-address', [BitcoinPaymentController::class, 'generateNewAddress']);
 Route::get('/donations', [BitcoinPaymentController::class, 'getWalletBalance']);
-// Route::post('/bitcoin/payments', [BitcoinPaymentController::class, 'generateNewAddress']);
+Route::get('/confirm', [BitcoinPaymentController::class, 'confirmPayment']);
+
+// Route::post('/bitcoin/payments', [BitcoinPaymentController::class, '']);
 
 // Charity cases
 // Route::post('/add-cases', [CauseController::class, 'store']);
