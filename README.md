@@ -1,6 +1,6 @@
 # Bitcoin/Lightning Donation System
 
-This is a donation system that allows users to make donations using either Bitcoin or the Lightning Network. Users can view a list of available digital products and select the one they want to donate towards. They can then generate a Bitcoin or Lightning invoice for the selected product and make a payment using their preferred payment method.
+This is a donation system that allows users to make donations with Bitcoin. Users can view a list of available projects/causes and select the one they want to donate towards. They can then donate to the selected charity case and make a payment using Bitcoin.
 
 ## Technologies Used
 
@@ -23,23 +23,20 @@ To get started with this project, follow these steps:
 
 ### `GET /causes`
 
-Returns a list of digital products available for purchase.
+Returns a list of causes available for donation.
 
 ### `GET /causes/{id}`
 
-Returns information about a specific product, including the price in Bitcoin and/or Lightning.
+Returns information about a specific charity case, including the donation goal.
 
 ### `POST /addresses`
 
-Generates a Bitcoin address for the selected product and returns details to the client.
+Generates a Bitcoin address for the selected charity and returns the bitcoin address to the client for payment.
 
 ### `GET /donate`
 
 Returns a view with a form that takes in some user input.
 
-### `POST /donate/generate-address`
-
-Submits the form from the `/donate` view and generates a Bitcoin address for the specified amount.
 
 ## License
 
